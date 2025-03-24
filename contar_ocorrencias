@@ -1,0 +1,13 @@
+def contar_ocorrencias(lista):
+    contagem = {}
+    for item in lista:
+        if item in contagem:
+            contagem[item] += 1
+        else:
+            contagem[item] = 1
+    return contagem
+
+# Exemplo
+palavras = ["Java", "Java", "Ruby", "Javascript", "Ruby", "Python", "Cobol", "Cobol", "Cobol"]
+resultado = contar_ocorrencias(palavras)
+print(resultado)

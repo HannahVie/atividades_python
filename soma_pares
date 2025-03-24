@@ -1,0 +1,8 @@
+def soma_pares(lista):
+    soma = sum(num for num in lista if num % 2 == 0)
+    return f"A soma dos pares é: {soma}"
+
+# Exemplo
+numeros = [2, 4, 10, 3, 9, 7, 15, 22]
+resultado = soma_pares(numeros)
+print(resultado)

@@ -1,0 +1,11 @@
+def obter_idade(pessoa):
+    return pessoa[1]
+
+def ordenar_por_idade(lista):
+    lista_ordenada = sorted(lista, key=obter_idade)
+    return [pessoa[0] for pessoa in lista_ordenada]
+
+# Exemplo
+pessoas = [("Gaby", 25), ("João", 22), ("Carla", 20), ("Marina", 24), ("Roberto", 27)]
+resultado = ordenar_por_idade(pessoas)
+print(resultado)
